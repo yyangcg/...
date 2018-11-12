@@ -1,0 +1,1 @@
+spark-submit --master yarn-client --num-executors 500 --executor-memory 6G --queue datamining app_user_tag.py

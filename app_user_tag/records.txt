@@ -1,0 +1,19 @@
+yiche_app:from 2018-04-28  to  2018-10-19 ：14422346  去重8302257 
+from 2017-10-24  to  2018-10-19 ：69665319  去重 19084227
+
+momo: from 2018-08-16  to  2018-08-27 ：44656806  去重23907188  +  momo IMEI from 2018-07-15  to  2018-08-15 ：70656806  去重25576462
+
+select count(distinct imeimd5,mediadata) where etl_dt between '2018-07-01' and '2018-08-01' and channelid=4;
+26599552
+
+select distinct imeimd5 as userid, mediadata where etl_dt between '2018-07-15' and '2018-08-15' and channelid=4 and length(imeimd5) =32;
+
+26004090
+
+
+momo_user_tag_disticnt : 29800000 去重25576462
+
+select distinct imeimd5 as userid, mediadata where etl_dt between '2018-06-15' and '2018-07-14' and channelid=4 and length(imeimd5) =32;
+
+
+momo_user_tag_disticnt : 35422789  41128474
